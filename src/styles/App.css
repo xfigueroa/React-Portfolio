@@ -1,0 +1,22 @@
+#root {
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+
+footer {  
+  color: #bdbdbd;
+  padding: .5em;  
+  height: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
