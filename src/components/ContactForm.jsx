@@ -1,4 +1,7 @@
 import React from 'react';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export const ContactForm = () => {    
     const [result, setResult] = React.useState("");
@@ -8,7 +11,7 @@ export const ContactForm = () => {
       setResult("Sending....");
       const formData = new FormData(event.target);
   
-      formData.append("access_key", "0c1f3341-52d6-48a7-a05d-e1cb2ebd8ee7");
+      formData.append("access_key", process.env.REACT_APP_ACCESS_KEY);
   
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
